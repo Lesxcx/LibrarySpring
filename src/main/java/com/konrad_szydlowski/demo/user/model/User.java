@@ -1,5 +1,6 @@
-package com.konrad_szydlowski.demo.model;
+package com.konrad_szydlowski.demo.user.model;
 
+import com.konrad_szydlowski.demo.AuditModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

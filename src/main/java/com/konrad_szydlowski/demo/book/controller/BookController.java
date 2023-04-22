@@ -1,9 +1,9 @@
-package com.konrad_szydlowski.demo.controller;
+package com.konrad_szydlowski.demo.book.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class UserController {
+public class BookController {
 
 
 }

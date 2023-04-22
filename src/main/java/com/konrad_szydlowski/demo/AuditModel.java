@@ -1,4 +1,4 @@
-package com.konrad_szydlowski.demo.model;
+package com.konrad_szydlowski.demo;
 
 import jakarta.persistence.*;
 import lombok.Getter;

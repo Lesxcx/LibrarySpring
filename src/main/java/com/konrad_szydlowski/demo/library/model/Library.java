@@ -1,4 +1,4 @@
-package com.konrad_szydlowski.demo.model;
+package com.konrad_szydlowski.demo.library.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,23 +13,26 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "penalty_point")
-public class PenaltyPoint {
+@Table(name = "library")
+public class Library {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "penalty_point_id")
     private Long id;
 
     @Column(name = "user_id")
     private Long user_id = getUser_id();
 
-    @Column(name = "penalty_point_start_day")
-    private LocalDate penaltyPointDayStart;
+    @Column(name = "book_id")
+    private Long book_id = getBook_id();
 
-    @Column(name = "penalty_point_expiry_day")
-    private LocalDate penaltyPointExpiryDay;
+    @Column(name = "rent_date")
+    private LocalDate rentDate;
 
-    @Column(name = "amount")
-    private int amount;
+    @Column(name = "max_term")
+    private LocalDate maxTerm;
+
+    @Column(name = "returning_date")
+    private LocalDate returningDate;
+
 }
