@@ -1,4 +1,4 @@
-package com.konrad_szydlowski.demo.user.model;
+package com.konrad_szydlowski.demo.user.repository.table;
 
 import com.konrad_szydlowski.demo.AuditModel;
 import jakarta.persistence.*;

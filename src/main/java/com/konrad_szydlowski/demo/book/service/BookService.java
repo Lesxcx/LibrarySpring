@@ -52,8 +52,8 @@ public class BookService {
         return bookRepository.save(book);
     }
 
-    public Map<String, Boolean> deleteById(Long bookId) throws BookException{
-        Book book = bookRepository.findById(bookId).orElseThrow(() -> new BookException("Book not found on: "
+    public Map<String, Boolean> deleteById(final Long bookId) throws BookException{
+        final Book book = bookRepository.findById(bookId).orElseThrow(() -> new BookException("Book not found on: "
         + bookId));
 
         bookRepository.delete(book);
